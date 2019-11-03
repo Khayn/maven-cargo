@@ -1,45 +1,52 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.baeldung</groupId>
-  <artifactId>cargo-deploy</artifactId>
-  <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>cargo-deploy Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.baeldung</groupId>
+	<artifactId>cargo-deploy</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>cargo-deploy Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
 
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.cargo</groupId>
-            <artifactId>cargo-maven2-plugin</artifactId>
-            <version>1.5.0</version>
-            <configuration>
-                <container>
-                    <containerId>tomcat7x</containerId>
-                    <type>installed</type>
-                    <home>D:\apache-tomcat-9.0.27</home>
-                </container>
-                <configuration>
-                    <type>existing</type>
-                    <home>D:\apache-tomcat-9.0.27</home>
-                </configuration>
-            </configuration>
-       </plugin>
-    </plugins>
-  
-    <finalName>cargo-deploy</finalName>
-  </build>
-  
-  
-  
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.5.0</version>
+				<configuration>
+					<container>
+						<containerId>tomcat7x</containerId>
+						<type>installed</type>
+						<home>D:\apache-tomcat-9.0.27</home>
+					</container>
+					<configuration>
+						<type>existing</type>
+						<home>D:\apache-tomcat-9.0.27</home>
+					</configuration>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<finalName>cargo-deploy</finalName>
+	</build>
+
+
 </project>
