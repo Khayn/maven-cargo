@@ -1,0 +1,12 @@
+<settings>
+	<server>
+		<id>TomcatServer</id>
+		<username>admin</username>
+		<password>password</password>
+	</server>
+
+	<pluginGroups>
+		<pluginGroup>org.codehaus.cargo</pluginGroup>
+	</pluginGroups>
+
+</settings>
