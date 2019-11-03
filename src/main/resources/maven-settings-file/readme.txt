@@ -7,3 +7,5 @@ add %CATALINA_HOME%\bin to system path
 add Tomcat roles as shown, or use supplied 
 
 Maven Cargo plugin will do the rest, as shown in linked above tutorial
+
+in case you have different local paths, remember to edit tomcat location in pom /plugins
