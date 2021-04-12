@@ -66,6 +66,7 @@
 					<url>http://khayn.synology.me:7070/manager/text</url>
 					<server>TomcatServer</server>
 					<path>/cargo-deploy</path>
+					<update>true</update>
 				</configuration>
 			</plugin>
 
